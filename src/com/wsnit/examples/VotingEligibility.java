@@ -2,7 +2,7 @@ package com.wsnit.examples;
 
 import java.util.Scanner;
 
-public class VotingEligibilityCheck {
+public class VotingEligibility {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
