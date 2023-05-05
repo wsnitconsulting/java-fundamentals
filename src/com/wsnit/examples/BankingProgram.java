@@ -14,10 +14,15 @@ public class BankingProgram {
         System.out.print("Enter your PIN code: ");
         int enteredPin = input.nextInt();
 
-        if (enteredPin != pinCode) {
-            System.out.println("Invalid PIN code. Please try again.");
-            return; // End the program if the PIN code is invalid
+        while (enteredPin != pinCode) {
+            System.out.print("Invalid PIN code. Please try again.");
+            enteredPin = input.nextInt();
         }
+
+//        if (enteredPin != pinCode) {
+//            System.out.println("Invalid PIN code. Please try again.");
+//            return; // End the program if the PIN code is invalid
+//        }
 
         // PIN code is correct, proceed with banking operations
         System.out.print("Enter the amount you want to withdraw: $");
